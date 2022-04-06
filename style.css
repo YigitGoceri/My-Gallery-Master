@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    margin-bottom: 50px;
+}
+
+
+
+
+.header{
+    margin: 60px auto ;
+    /*max-width: 70%; */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; 
+}
+
+.header .image{
+    display: flex;
+
+max-height: 156px;
+max-width: 156px; 
+
+}
+
+.header .image img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.header .name{
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 16px;
+}
+
+.header .location{
+font-family: 'Montserrat',sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 8px;
+color: #A9A9A9;;
+
+}
+
+.header .profile_popularity{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+    
+}
+
+.header .profile_popularity li{
+    display:flex;
+    height: 67px;
+    width: 100px;
+    border-radius: 12px;
+    background: #E5E5E5;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: 24px;
+      }
+
+.header .profile_popularity li:first-child{
+    margin-left: 0px;
+}
+
+.header .profile_popularity li h2{
+
+font-family: 'Montserrat',sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+color: #4E5150;
+text-align: center;
+}
+
+.header .profile_popularity li h2+p{
+font-family:'Montserrat',sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: center;
+color: #BDBDBD;
+}  /*header tamam */
+
+.container{
+    
+    margin: 63px auto auto auto;
+    /*width: 70%; */
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+.container .img img{
+    border-radius: 12px;
+        
+}
+
+.container .img1 {
+    grid-row:1/span 1;
+    grid-column:1/span 1;
+    max-width: 299px; 
+    max-height: 299px;
+   
+   
+      }
+
+.container .img1 img{
+    width: 100%;
+   
+    object-fit: fill;
+    
+}
+
+.container .img2 {
+    grid-row:1;
+    grid-column:2/span 2;
+   max-width: 629px;
+   max-height: 299px;
+   
+   
+    
+}
+
+.container .img2 img{
+    width:100%; 
+    height: 100%;
+    
+    
+    
+}
+
+.container .img3{
+    grid-row:2;
+    grid-column:1/span 2;
+    max-width: 627px;
+    
+}
+
+.container .img3 img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: fill;
+}
+
+.container .img4{
+    grid-row: 2/span 2;
+    grid-column: 3/span 1;
+    
+    
+    
+}
+
+.container .img4 img{
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+.container .img5 {
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+    max-width: 299px;
+    
+}
+
+.container .img5 img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.container .img6 {
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+    max-width: 299px;
+  
+    
+}
+
+.container .img6 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.container img:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    opacity: 0.7;
+    
+}
+
+
+footer{
+    margin-top: 20px;
+    color: #A9A9A9;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:600px) {
+
+    .header .image{
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .header .profile_popularity li{
+        max-width: 78px;
+        max-height: 52px;
+    }
+    .header .profile_popularity li h2{
+        font-size: 12px;
+    }
+
+    .header .profile_popularity li h2+p{
+        font-size: 12px;
+    }
+
+    .header .profile_popularity{
+        margin-top: 12px;
+    }
+
+    .header .name{
+        font-size: 12px;
+        margin-top: 11px;
+    }
+
+    .header .location {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    .container{
+        grid-gap: 5px;
+        margin: 39px 12px;
+    }
+    
+}
+   
+
+
+
+
+
+
